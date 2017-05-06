@@ -1,0 +1,32 @@
+
+body {
+	background: url(images/background.png);
+}
+
+h1 {
+	text-align: center;
+
+}
+
+#top-crystal {
+	width; 275px;
+	height; 350;
+}
+
+#left-crystal {
+	width; 275px;
+	height; 350;
+}
+
+#right-crystal {
+	width; 275px;
+	height; 350;
+}
+
+#targetNumber {
+	float: left;
+}
+
+#counter {
+	float: left;
+}

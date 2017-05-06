@@ -1,0 +1,66 @@
+
+
+$("#targetNumber").text(targetNumber);
+
+var counter = 0;
+
+var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+var increment = numberOptions[Math.round(Math.random())];
+
+// $(".thumbnail").on("click", function() {
+
+// 	counter += increment;
+
+// 	console.log(counter);
+
+// 	if (counter === targetNumber) {
+
+// 		console.log("You Win!");
+
+// 	if (counter > targetNumber) {
+
+// 		console.log("You Lose");
+// 	}	
+// 	}
+// })
+$("#top-crystal").on("click", function() {
+
+	var crystalValue = ($(this).attr("data-crystalvalue"));
+	crystalValue = parseInt(crystalValue);
+
+	counter += crystalValue;
+
+	console.log(counter);
+})
+
+for (var i = 0; i < numberOptions.length; i++) {
+
+	var topCrystal = $("#top-crystal");
+
+	topCrystal.attr("src", "assets/images/greencrystal.jpg");
+
+	topCrystal.attr("data-crystalvalue", numberOptions[i]);
+
+	$("#top-crystal").append(topCrystal);
+}
+
+$("#left-crystal").on("click", function() {
+
+	var leftValue = ($(this).attr("data-crystalvalue"));
+	leftValue = parseInt(leftValue);
+
+	counter += leftValue;
+
+	console.log(counter);
+})
+for (var i = 0; i < numberOptions.length; i++) {
+
+	var leftCrystal = $("#left-crystal");
+
+	topCrystal.attr("src", "assets/images/blueswirl.jpg");
+
+	topCrystal.attr("data-crystalvalue", numberOptions[i]);
+
+	$("#left-crystal").append(leftCrystal);
+}
+
